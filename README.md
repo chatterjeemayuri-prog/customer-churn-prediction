@@ -23,6 +23,25 @@ The example model uses:
 as predictive features for customer churn.
 
 This project illustrates the basic structure of a machine learning pipeline for churn prediction.
+
+## Example Output
+
+The logistic regression model produces a classification report evaluating churn prediction performance.
+
+Typical output structure:
+
+```
+precision    recall  f1-score   support
+
+0       0.xx      0.xx      0.xx        n
+1       0.xx      0.xx      0.xx        n
+
+accuracy                           0.xx
+```
+
+This demonstrates the workflow for training and evaluating a churn prediction model using scikit-learn.
+
+
 ## Project Structure
 
 ```
