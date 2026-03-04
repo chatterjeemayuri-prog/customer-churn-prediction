@@ -16,6 +16,16 @@ The project demonstrates a typical data science workflow:
 
 Tools used: Python, pandas, scikit-learn, matplotlib.
 
+## Key Results
+
+- Built predictive models to identify customers likely to churn.
+- Evaluated multiple algorithms including Logistic Regression and tree-based models.
+- Compared model performance using metrics such as accuracy, precision, recall, and ROC-AUC.
+- Identified key features influencing churn behaviour.
+- Produced visualizations to interpret model performance and feature importance.
+
+This project illustrates how statistical modelling can be applied to real business problems such as customer retention.
+
 ## Modeling Approach
 
 The project demonstrates a simple churn prediction workflow:
