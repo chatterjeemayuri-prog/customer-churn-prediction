@@ -4,10 +4,25 @@ This project demonstrates an end-to-end machine learning workflow for predicting
 
 ## Project Overview
 
-Customer churn prediction helps businesses identify customers who are likely to stop using a service. Predictive models allow companies to intervene early and improve retention strategies.
+## Modeling Approach
 
-This repository contains exploratory analysis and modeling for churn prediction.
+The project demonstrates a simple churn prediction workflow:
 
+1. Load telecom customer dataset
+2. Prepare numerical features
+3. Split the dataset into training and test sets
+4. Train a Logistic Regression model
+5. Evaluate model performance using classification metrics
+
+The example model uses:
+
+- Tenure
+- Monthly Charges
+- Total Charges
+
+as predictive features for customer churn.
+
+This project illustrates the basic structure of a machine learning pipeline for churn prediction.
 ## Project Structure
 
 ```
