@@ -4,6 +4,18 @@ This project demonstrates an end-to-end machine learning workflow for predicting
 
 ## Project Overview
 
+This project builds a predictive model to identify customers at risk of churn. 
+Using statistical modelling and machine learning techniques, the goal is to 
+analyze customer behavior and predict which users are most likely to leave.
+
+The project demonstrates a typical data science workflow:
+- Data exploration and preprocessing
+- Feature engineering
+- Model development and evaluation
+- Visualization of insights
+
+Tools used: Python, pandas, scikit-learn, matplotlib.
+
 ## Modeling Approach
 
 The project demonstrates a simple churn prediction workflow:
