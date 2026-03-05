@@ -102,3 +102,4 @@ customer-churn-prediction
 - Model comparison
 - Model evaluation
 - Model deployment
+- Model interpretability using feature importance and SHAP values
