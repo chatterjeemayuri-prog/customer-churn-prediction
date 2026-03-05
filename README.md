@@ -1,5 +1,5 @@
 # Customer Churn Prediction
-
+Customer churn prediction using logistic regression and exploratory data analysis on telecom customer data.
 This project demonstrates an end-to-end machine learning workflow for predicting customer churn using Python.
 
 ## Project Overview
