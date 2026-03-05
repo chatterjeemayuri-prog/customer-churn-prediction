@@ -103,3 +103,8 @@ customer-churn-prediction
 - Model evaluation
 - Model deployment
 - Model interpretability using feature importance and SHAP values
+
+Author
+
+Mayuri Chatterjee
+Data Scientist | Statistical Modeling | Machine Learning
