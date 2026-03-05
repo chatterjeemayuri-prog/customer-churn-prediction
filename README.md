@@ -16,6 +16,15 @@ The project demonstrates a typical data science workflow:
 
 Tools used: Python, pandas, scikit-learn, matplotlib.
 
+## Exploratory Data Analysis
+
+Initial analysis of the telecom dataset includes:
+- distribution of churn vs non-churn customers
+- summary statistics of key variables
+- visualization of relationships between tenure, charges, and churn
+
+This step helps understand patterns in customer behavior before model development.
+
 ## Key Results
 
 - Built predictive models to identify customers likely to churn.
