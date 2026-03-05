@@ -14,6 +14,8 @@ The project demonstrates a typical data science workflow:
 - Model development and evaluation
 - Visualization of insights
 
+This project demonstrates how statistical modelling can help businesses identify customers at risk of leaving and support data-driven retention strategies.
+
 Tools used: Python, pandas, scikit-learn, matplotlib.
 
 ## Exploratory Data Analysis
