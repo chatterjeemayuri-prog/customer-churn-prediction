@@ -57,6 +57,17 @@ as predictive features for customer churn.
 
 This project illustrates the basic structure of a machine learning pipeline for churn prediction.
 
+Feature Importance Analysis
+
+To better understand the drivers of customer churn, feature importance was analyzed using the coefficients from the logistic regression model.
+
+Key observations include:
+- Customers with higher monthly charges tend to have a higher probability of churn.
+- Customers with longer tenure are less likely to churn.
+- Total charges also contribute to churn prediction but with lower importance.
+
+This analysis helps interpret the model and understand which factors influence customer retention.
+
 ## Example Output
 
 The logistic regression model produces a classification report evaluating churn prediction performance.
