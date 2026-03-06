@@ -18,6 +18,17 @@ This project demonstrates how statistical modelling can help businesses identify
 
 Tools used: Python, pandas, scikit-learn, matplotlib.
 
+## Dataset
+
+The dataset used in this project is the Telco Customer Churn dataset, which contains customer demographic information, account details, and service usage patterns.
+
+Key variables include:
+- Tenure
+- Monthly Charges
+- Total Charges
+- Contract type
+- Churn indicator
+
 ## Exploratory Data Analysis
 
 Initial analysis of the telecom dataset includes:
