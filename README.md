@@ -1,132 +1,87 @@
-# Customer Churn Prediction
-Customer churn prediction using logistic regression and exploratory data analysis on telecom customer data.
-This project demonstrates an end-to-end machine learning workflow for predicting customer churn using Python.
+# Customer Churn Prediction for Retention Strategy Optimization
 
-## Project Overview
+## 📌 Business Problem
+Customer churn is a major challenge for subscription-based businesses, directly impacting revenue and growth. Identifying customers at risk of leaving allows companies to take proactive retention actions.
 
-This project builds a predictive model to identify customers at risk of churn. 
-Using statistical modelling and machine learning techniques, the goal is to 
-analyze customer behavior and predict which users are most likely to leave.
+---
 
-The project demonstrates a typical data science workflow:
-- Data exploration and preprocessing
-- Feature engineering
-- Model development and evaluation
-- Visualization of insights
+## 🎯 Objective
+Develop a predictive model to:
+- Identify customers likely to churn  
+- Understand key drivers of churn  
+- Support data-driven retention strategies  
 
-This project demonstrates how statistical modelling can help businesses identify customers at risk of leaving and support data-driven retention strategies.
+---
 
-Tools used: Python, pandas, scikit-learn, matplotlib.
+## 📊 Dataset
+Telco Customer Churn dataset containing:
+- Customer demographics  
+- Account information  
+- Service usage patterns  
 
-## Dataset
+**Key features:**
+- Tenure  
+- Monthly Charges  
+- Total Charges  
+- Contract Type  
+- Churn (target variable)  
 
-The dataset used in this project is the Telco Customer Churn dataset, which contains customer demographic information, account details, and service usage patterns.
+---
 
-Key variables include:
-- Tenure
-- Monthly Charges
-- Total Charges
-- Contract type
-- Churn indicator
+## ⚙️ Approach
 
-## Exploratory Data Analysis
+### 1. Data Preprocessing
+- Handled missing values and data inconsistencies  
+- Encoded categorical variables  
+- Scaled numerical features  
 
-Initial analysis of the telecom dataset includes:
-- distribution of churn vs non-churn customers
-- summary statistics of key variables
-- visualization of relationships between tenure, charges, and churn
+### 2. Exploratory Data Analysis
+- Analyzed churn vs non-churn distribution  
+- Examined relationships between tenure, charges, and churn  
+- Visualized feature distributions and correlations  
 
-This step helps understand patterns in customer behavior before model development.
+### 3. Feature Engineering
+- Selected key predictors influencing churn  
+- Evaluated feature importance  
 
-## Key Results
+### 4. Model Development
+- Logistic Regression  
+- Tree-based models (for comparison)  
 
-- Built predictive models to identify customers likely to churn.
-- Evaluated multiple algorithms including Logistic Regression and tree-based models.
-- Compared model performance using metrics such as accuracy, precision, recall, and ROC-AUC.
-- Identified key features influencing churn behaviour.
-- Produced visualizations to interpret model performance and feature importance.
+### 5. Model Evaluation
+- Accuracy  
+- Precision & Recall  
+- ROC-AUC  
 
-This project illustrates how statistical modelling can be applied to real business problems such as customer retention.
+---
 
-## Modeling Approach
+## 📈 Key Insights
+- Customers with **higher monthly charges** show higher churn probability → pricing sensitivity  
+- Customers with **longer tenure** are less likely to churn → loyalty effect  
+- Contract type significantly impacts churn behavior  
 
-The project demonstrates a simple churn prediction workflow:
+These insights support targeted retention strategies such as pricing adjustments and engagement campaigns.
 
-1. Load telecom customer dataset
-2. Prepare numerical features
-3. Split the dataset into training and test sets
-4. Train a Logistic Regression model
-5. Evaluate model performance using classification metrics
+---
 
-The example model uses:
+## 🧠 Business Impact
+- Enables early identification of high-risk customers  
+- Supports retention campaigns and reduces revenue loss  
+- Improves customer lifetime value (LTV)  
 
-- Tenure
-- Monthly Charges
-- Total Charges
+---
 
-as predictive features for customer churn.
+## 🛠️ Tech Stack
+- Python  
+- Pandas  
+- NumPy  
+- Scikit-learn  
+- Matplotlib  
 
-This project illustrates the basic structure of a machine learning pipeline for churn prediction.
+---
 
-Feature Importance Analysis
-
-To better understand the drivers of customer churn, feature importance was analyzed using the coefficients from the logistic regression model.
-
-Key observations include:
-- Customers with higher monthly charges tend to have a higher probability of churn.
-- Customers with longer tenure are less likely to churn.
-- Total charges also contribute to churn prediction but with lower importance.
-
-This analysis helps interpret the model and understand which factors influence customer retention.
-
-## Example Output
-
-The logistic regression model produces a classification report evaluating churn prediction performance.
-
-Typical output structure:
-
-```
-precision    recall  f1-score   support
-
-0       0.xx      0.xx      0.xx        n
-1       0.xx      0.xx      0.xx        n
-
-accuracy                           0.xx
-```
-
-This demonstrates the workflow for training and evaluating a churn prediction model using scikit-learn.
-
-
-## Project Structure
-
-```
-customer-churn-prediction
-│
-├── data/              # Dataset files
-├── notebooks/         # Jupyter notebooks for analysis
-│   └── churn_analysis.ipynb
-├── src/               # Reusable code (future)
-├── models/            # Saved models (future)
-└── README.md
-```
-
-## Tools Used
-
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Matplotlib
-
-## Future Work
-
-- Feature engineering
-- Model comparison
-- Model evaluation
-- Model deployment
-- Model interpretability using feature importance and SHAP values
-
-Author
-
-Mayuri Chatterjee
-Data Scientist | Statistical Modeling | Machine Learning
+## 🗃️ Example SQL Query (Data Extraction Simulation)
+```sql
+SELECT customer_id, tenure, monthly_charges, churn
+FROM customer_data
+WHERE churn = 1;
