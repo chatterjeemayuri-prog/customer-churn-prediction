@@ -86,6 +86,8 @@ SELECT customer_id, tenure, monthly_charges, churn
 FROM customer_data
 WHERE churn = 1;
 
+---
+
 ## 🚀 Future Improvements
 - Advanced feature engineering  
 - Hyperparameter tuning  
