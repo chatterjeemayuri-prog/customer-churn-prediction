@@ -1,64 +1,48 @@
-# Customer Churn Prediction for Retention Strategy Optimization
+# Customer Churn Prediction
 
-## Business Problem
-Customer churn impacts revenue and growth. Identifying at-risk customers enables proactive retention strategies.
+## Project Overview
+This project builds a predictive model to identify customers at risk of churn. Using statistical modeling and machine learning techniques, the goal is to analyze customer behavior and predict which users are most likely to leave.
 
----
-
-## Objective
+## Problem Statement
 - Identify customers likely to churn  
-- Understand key drivers  
-- Support data-driven decisions  
-
----
+- Understand key drivers behind churn behavior  
+- Support data-driven retention strategies  
 
 ## Dataset
-Telco Customer Churn dataset with:
+The dataset includes customer demographic information, account details, and service usage patterns.
+
+Key variables:
 - Tenure  
 - Monthly Charges  
 - Total Charges  
 - Contract Type  
-- Churn  
+- Churn Indicator  
 
----
+## Methodology
+- Data cleaning and preprocessing  
+- Exploratory Data Analysis (EDA)  
+- Feature selection  
+- Model building (Logistic Regression, Tree-based models)  
+- Model evaluation  
 
-## Approach
-
-### Data Preprocessing
-- Handled missing values  
-- Encoded categorical variables  
-- Scaled numerical features  
-
-### Exploratory Data Analysis
-- Churn vs non-churn distribution  
-- Relationships between tenure, charges, and churn  
-
-### Model Development
-- Logistic Regression  
-- Tree-based models  
-
-### Model Evaluation
+## Model Evaluation
 - Accuracy  
-- Precision & Recall  
+- Precision  
+- Recall  
+- F1-score  
 - ROC-AUC  
-
----
 
 ## Key Insights
 - Higher monthly charges → higher churn probability  
 - Longer tenure → lower churn  
-- Contract type impacts churn behavior  
+- Contract type significantly impacts churn behavior  
 
 These insights support pricing and retention strategies.
-
----
 
 ## Business Impact
 - Identify high-risk customers  
 - Support retention campaigns  
 - Improve customer lifetime value (LTV)  
-
----
 
 ## Tech Stack
 - Python  
@@ -67,7 +51,26 @@ These insights support pricing and retention strategies.
 - Scikit-learn  
 - Matplotlib  
 
----
+## How to Run
+1. Open the notebook `churn_analysis.ipynb`  
+2. Run all cells  
+3. The notebook will:
+   - Load and preprocess data  
+   - Train models  
+   - Evaluate performance  
+   - Generate insights  
+
+## Repository Structure
+```
+customer-churn-prediction/
+│
+├── data/                  # Dataset files
+├── notebooks/
+│   └── churn_analysis.ipynb
+├── src/                   # Reusable code (optional future use)
+├── models/                # Saved models (optional future use)
+└── README.md
+```
 
 ## Example SQL Query
 ```sql
@@ -77,7 +80,7 @@ WHERE churn = 1;
 ```
 
 ## Future Improvements
-- Feature engineering
-- Hyperparameter tuning
-- Model deployment
-- Model interpretability (SHAP)
+- Feature engineering  
+- Hyperparameter tuning  
+- Model deployment  
+- Model interpretability (SHAP)  
