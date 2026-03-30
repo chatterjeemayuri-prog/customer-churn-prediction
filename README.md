@@ -1,77 +1,66 @@
 # Customer Churn Prediction for Retention Strategy Optimization
 
-## 📌 Business Problem
-Customer churn is a major challenge for subscription-based businesses, directly impacting revenue and growth. Identifying customers at risk of leaving allows companies to take proactive retention actions.
+## Business Problem
+Customer churn impacts revenue and growth. Identifying at-risk customers enables proactive retention strategies.
 
 ---
 
-## 🎯 Objective
-Develop a predictive model to:
+## Objective
 - Identify customers likely to churn  
-- Understand key drivers of churn  
-- Support data-driven retention strategies  
+- Understand key drivers  
+- Support data-driven decisions  
 
 ---
 
-## 📊 Dataset
-Telco Customer Churn dataset containing:
-- Customer demographics  
-- Account information  
-- Service usage patterns  
-
-**Key features:**
+## Dataset
+Telco Customer Churn dataset with:
 - Tenure  
 - Monthly Charges  
 - Total Charges  
 - Contract Type  
-- Churn (target variable)  
+- Churn  
 
 ---
 
-## ⚙️ Approach
+## Approach
 
-### 1. Data Preprocessing
-- Handled missing values and data inconsistencies  
+### Data Preprocessing
+- Handled missing values  
 - Encoded categorical variables  
 - Scaled numerical features  
 
-### 2. Exploratory Data Analysis
-- Analyzed churn vs non-churn distribution  
-- Examined relationships between tenure, charges, and churn  
-- Visualized feature distributions and correlations  
+### Exploratory Data Analysis
+- Churn vs non-churn distribution  
+- Relationships between tenure, charges, and churn  
 
-### 3. Feature Engineering
-- Selected key predictors influencing churn  
-- Evaluated feature importance  
-
-### 4. Model Development
+### Model Development
 - Logistic Regression  
-- Tree-based models (for comparison)  
+- Tree-based models  
 
-### 5. Model Evaluation
+### Model Evaluation
 - Accuracy  
 - Precision & Recall  
 - ROC-AUC  
 
 ---
 
-## 📈 Key Insights
-- Customers with **higher monthly charges** show higher churn probability → pricing sensitivity  
-- Customers with **longer tenure** are less likely to churn → loyalty effect  
-- Contract type significantly impacts churn behavior  
+## Key Insights
+- Higher monthly charges → higher churn probability  
+- Longer tenure → lower churn  
+- Contract type impacts churn behavior  
 
-These insights support targeted retention strategies such as pricing adjustments and engagement campaigns.
-
----
-
-## 🧠 Business Impact
-- Enables early identification of high-risk customers  
-- Supports retention campaigns and reduces revenue loss  
-- Improves customer lifetime value (LTV)  
+These insights support pricing and retention strategies.
 
 ---
 
-## 🛠️ Tech Stack
+## Business Impact
+- Identify high-risk customers  
+- Support retention campaigns  
+- Improve customer lifetime value (LTV)  
+
+---
+
+## Tech Stack
 - Python  
 - Pandas  
 - NumPy  
@@ -80,7 +69,7 @@ These insights support targeted retention strategies such as pricing adjustments
 
 ---
 
-## 🗃️ Example SQL Query (Data Extraction Simulation)
+## Example SQL Query
 ```sql
 SELECT customer_id, tenure, monthly_charges, churn
 FROM customer_data
@@ -88,8 +77,8 @@ WHERE churn = 1;
 
 ---
 
-## 🚀 Future Improvements
-- Advanced feature engineering  
+## Future Improvements
+- Feature engineering  
 - Hyperparameter tuning  
-- Model deployment (API/dashboard)  
-- SHAP-based interpretability
+- Model deployment  
+- Model interpretability (SHAP)  
