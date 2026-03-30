@@ -74,3 +74,11 @@ These insights support pricing and retention strategies.
 SELECT customer_id, tenure, monthly_charges, churn
 FROM customer_data
 WHERE churn = 1;
+
+---
+
+## Future Improvements
+- Feature engineering  
+- Hyperparameter tuning  
+- Model deployment  
+- Model interpretability (SHAP)  
